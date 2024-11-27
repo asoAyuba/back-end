@@ -28,4 +28,4 @@ app.use('/colonies', colonyRoutes);
 app.use('/partners', partnerRoutes);
 app.use('/api', resetRouter); // Montar el endpoint en "/api/reset-db"
 
-app.listen(4000, () => console.log('Microservicio corriendo en http://localhost:4000'));
+app.listen(4000, '0.0.0.0', () => console.log('Microservicio corriendo en http://0.0.0.0:4000'));
